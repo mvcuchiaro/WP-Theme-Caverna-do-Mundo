@@ -201,12 +201,12 @@
 
 						</div> <!-- fim title-esport -->
 
-						<?php query_posts('category_name=e-sports&offset=0&showposts=3'); ?>
+						<?php query_posts('category_name=e-sports&offset=0&showposts=1'); ?>
 
 						<?php if (have_posts()) : ?>
 						<?php while (have_posts()) : the_post(); ?>
 
-						<a href="#"><img src="<?php the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+						<a href="<?php the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
 								<div class="esport-info"/>
 
@@ -230,13 +230,22 @@
 
 									<ul>
 
+										<?php query_posts('category_name=e-sports&offset=1&showposts=1'); ?>
+
+										<?php if (have_posts()) : ?>
+										<?php while (have_posts()) : the_post(); ?>
+
 										<li>
 
-											<a href="#"><img src="<?php bloginfo('template_url') ?>/images/post2.jpg" rel="" title="" /></a>
+											<a href="<?php the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
-											<h2><a href="">Ultima edição do Mundial de League of Legends que occorreu na Korea foi o que motivou a descisão, diz Presidente do COI.</a></h2>
+											<h2><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h2>
 
 										</li>
+
+										<?php endwhile; ?>
+										<?php else : ?>
+										<?php endif; ?>
 
 									</ul>
 
@@ -253,33 +262,51 @@
 
 						</div> <!-- fim title-colunas -->
 
-						<a href="#"><img src="<?php bloginfo('template_url') ?>/images/post4.jpg" rel="" title="" /></a>
+						<?php query_posts('category_name=colunas&offset=0&showposts=1'); ?>
+
+						<?php if (have_posts()) : ?>
+						<?php while (have_posts()) : the_post(); ?>
+
+						<a href="<?php the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
 								<div class="colunas-info"/>
 
 									<ul>
 
-										<li class="colunas-autor">autor</li>
-										<li class="colunas-views">views</li>
-										<li class="colunas-coment">coment</li>
+										<li class="colunas-autor"><?php the_author(); ?></li>
+										<li class="colunas-views"><?php if (function_exists('the_views')) { the_views(); } ?></li>
+										<li class="colunas-coment"><?php comments_number('0', '1', '%'); ?></li>
 
 									</ul>
 
 								</div> <!--/ fim colunas-info -->
 
-								<h1><a href="#">Starcraft II e League of Legends estarão nos Jogos Olímpicos de 2020</a></h1>
+								<h1><a href="<?php  the_Permalink(); ?>"><?php the_title(); ?></a></h1>
+
+						<?php endwhile; ?>
+						<?php else : ?>
+						<?php endif; ?>
 
 								<div id="colunas-list">
 
 									<ul>
 
+										<?php query_posts('category_name=colunas&offset=1&showposts=1'); ?>
+
+										<?php if (have_posts()) : ?>
+										<?php while (have_posts()) : the_post(); ?>
+
 										<li>
 
-											<a href="#"><img src="<?php bloginfo('template_url') ?>/images/post2.jpg" rel="" title="" /></a>
+											<a href="<?php the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
-											<h2><a href="">Ultima edição do Mundial de League of Legends que occorreu na Korea foi o que motivou a descisão, diz Presidente do COI.</a></h2>
+											<h2><a href="<?php  the_Permalink(); ?>"><?php the_title(); ?></a></h2>
 
 										</li>
+
+										<?php endwhile; ?>
+										<?php else : ?>
+										<?php endif; ?>
 
 									</ul>
 
