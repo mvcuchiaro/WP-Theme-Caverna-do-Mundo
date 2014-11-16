@@ -1,0 +1,1436 @@
+/* 
+
+Theme Name: Caverna do Mundo / Blog
+Description: Tema desenvolvido para o blog CDM
+Author: Marco V. Cuchiaro
+Version: 1.0.2
+
+*/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background:#fff;
+	font:14px arial, tahoma, verdana;
+	text-align:center;
+}
+
+/*=== Header ===*/
+
+#header {
+	width:100%;
+	background:#fff;
+}
+
+#header-superior {
+	width:100%;
+	background:#f8f8f8;
+	border-bottom:1px solid #e1e1e1;
+}
+
+#header-superior-content {
+	width:1000px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#header-paginas {
+	float:left;
+}
+
+#header-paginas ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#header-paginas ul li {
+	float:left;
+}
+
+#header-paginas ul li a {
+	color:#777;
+	text-decoration:none;
+	padding:20px 10px;
+	display:block;
+	border-right:1px solid #e1e1e1;
+}
+
+#header-paginas ul li a:hover {
+	color:#ed5353;
+	background:#eee;
+}
+
+#header-social {
+	float:right;
+}
+
+#header-social a {
+	display:block;
+	margin:12px 0 0 10px;
+	float:left; 
+}
+
+#header-content {
+	width:1000px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#logo {
+	float:left;
+	padding:50px 0;
+}
+
+#login {
+	float:right;
+	margin-top:60px;
+}
+
+#login ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#login ul li {
+	float:left;
+}
+
+#login ul .logar a {
+	background:#393939;
+}
+
+#login ul .registre a {
+	background:#171717;
+}
+
+#login ul li a {
+	padding:6px;
+	display:block;
+	text-decoration:none;
+	color:#fff;
+}
+
+#search {
+	float:right;
+	margin-top:50px;
+}
+
+#search input {
+	float:left;
+	border:0;
+	padding:14px 8px;
+	width:270px;
+	background:#f5f5f5;
+}
+
+#search .btn-search {
+	background:#f5f5f5 url(images/search.jpg) no-repeat center;;
+	width:38px;
+	height:44px; 
+	cursor:pointer;
+}
+
+/*=== Menu de Navegação ===*/
+
+#nav {
+	width:100%;
+	float:left;
+	background:#222;
+	border-top:3px solid #ed5353;
+}
+
+#nav-content {
+	width:1000px;
+	margin:0 auto;
+}
+
+#nav-content ul {
+	float:left;
+	list-style:none;
+	text-align:left;
+}
+
+#nav-content ul li {
+	float:left;
+	position:relative;
+	font:14px arial, verdana, tahoma;
+	font-weight:bold;
+	text-transform:uppercase;
+	border-right:1px solid #333;
+}
+
+#nav-content ul li a {
+	display:block;
+	padding:20px;
+	text-decoration:none;
+	color:#fff;
+}
+
+#nav-content ul li:hover {
+	background:#ed5353;
+}
+
+#nav-content ul li ul {
+	width:220px;
+	display:none;
+	background:#f8f8f8;
+	position:absolute;
+	border-left:5px solid;
+	color:#ed5353;
+}
+
+#nav-content ul li:hover ul {
+	display:block;
+}
+
+#nav-content ul li ul li {
+	border-right:none;
+	width:220px;
+	font: 14px arial;
+}
+
+#nav-content ul li ul li a {
+	padding:10px 12px;
+	color:#666;
+	border-bottom:1px solid #e1e1e1;
+}
+
+#nav-content ul li ul li a:hover {
+	background:#eee;
+	color:#ed5353;
+}
+
+/*=== Cointainer ===*/
+
+#container {
+	width:1000px;
+	margin:0 auto;
+	text-align:left;
+	overflow:hidden;
+}
+
+#content {
+	width:690px;
+	float:left;
+	overflow:hidden;
+}
+
+/*=== Destaque ===*/
+
+#destaque {
+	width:100%;
+	float:left;
+	margin-top:30px;
+	border-bottom:1px solid #efeeee;
+}
+
+#destaque .destaque-post {
+	width:330px;
+	float:left;
+
+}
+
+#destaque .right {
+	float:right;
+}
+
+#destaque .destaque-post img {
+	width:330px;
+	height:190px;
+}
+
+#destaque .destaque-post h1 {
+	font:18px arial; font-weight:bold;
+}
+
+#destaque .destaque-post h1 a{
+	color:#444;
+	text-decoration:none;
+}
+
+#destaque .destaque-post h1 a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+#destaque .destaque-info {
+	width:100%;
+	float:left;
+}
+
+#destaque .destaque-info ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#destaque .destaque-info ul li {
+	width:60px;
+	color:#777;
+	float:left;
+	padding:4px 20px;
+}
+
+#destaque .destaque-info ul .dest-autor {
+	background:url(images/autor.png) no-repeat left center;
+}
+
+#destaque .destaque-info ul .dest-views {
+	background:url(images/views.png) no-repeat left center;
+}
+
+#destaque .destaque-info ul .dest-coment {
+	background:url(images/coment.png) no-repeat left center;
+}
+
+#destaque .list-dest {
+	width:100%;
+	float:left;
+	margin-top:20px;
+}
+
+#destaque .list-dest li {
+	width:100%;
+	list-style:none;
+	float:left;
+	padding:14px 0px;
+	border-top: 1px solid #efeeee;
+}
+
+#destaque .list-dest img {
+	width:96px;
+	height:70px;
+	float:left;
+	margin-right:8px;
+}
+
+
+#destaque .list-dest h2 {
+	font:14px arial;
+}
+
+#destaque .list-dest h2 a {
+	color:#444;
+	text-decoration:none;
+}
+
+#destaque .list-dest h2 a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+/*=== Tecnologia ===*/
+
+#tecnologia {
+	width:100%;
+	float:left;
+	margin-top:28px;
+}
+
+#tecnologia #title-tec {
+	border-bottom:2px solid #efeeee;
+	padding:5px 0;
+
+}
+
+#tecnologia #title-tec span {
+	font:22px arial;
+	font-weight:bold;
+	color:#292929;
+	border-bottom:2px solid #ed5353;
+	padding:5px 0;
+}
+
+#tecnologia .post-tec {
+	width:100%;
+	float:left;
+	padding:20px 0;
+	border-bottom:1px solid #efeeee;
+}
+
+#tecnologia .post-tec img {
+	width:200px;
+	height:120px;
+	float:left;
+	margin-right:12px;
+}
+
+#tecnologia .post-tec h1 {
+	font: 22px arial;
+}
+
+#tecnologia .post-tec h1 a {
+	color:#555;
+	text-decoration:none;
+}
+
+#tecnologia .post-tec h1 a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+#tecnologia .tec-info {
+	width:400px;
+	margin:2px 0;
+	float:left;
+}
+
+#tecnologia .tec-info ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#tecnologia .tec-info ul li {
+	width:60px;
+	color:#777;
+	float:left;
+	padding:4px 20px;
+}
+
+#tecnologia .tec-info ul .tec-autor {
+	background:url(images/autor.png) no-repeat center left;
+}
+
+#tecnologia .tec-info ul .tec-views {
+	background:url(images/views.png) no-repeat center left;
+}
+
+#tecnologia .tec-info ul .tec-coment {
+	background:url(images/coment.png) no-repeat center left;
+}
+
+#tecnologia .post-tec p {
+	color:#888;
+	float:left;
+	width:450px;
+}
+
+#tecnologia .post-tec p a {
+	color: #ed5353
+}
+
+/*=== Bloco Entretenimento ===*/
+
+#entretenimento {
+	width: 100%;
+	float: left;
+	margin-top: 26px;
+}
+
+#entretenimento #title-entretenimento {
+	border-bottom: 2px solid #efeeee;
+	padding: 4px 0;
+}
+
+#entretenimento #title-entretenimento span {
+	font: 22px arial;
+	font-weight: bold;
+	padding: 5px 0;
+	border-bottom: 2px solid #ed5353;
+	color: #292929;
+}
+
+#entretenimento .post-entretenimento {
+	width: 215px;
+	float: left;
+	padding: 20px 7.5px;
+}
+
+#entretenimento .post-entretenimento img {
+	width: 215px;
+	height: 160px;
+}
+
+#entretenimento .post-entretenimento h1 {
+	font: 16px arial;
+	font-weight: bold;
+	margin: 5px 0;
+}
+
+#entretenimento .post-entretenimento h1 a {
+	text-decoration: none;
+	color: #444;
+}
+
+#entretenimento .post-entretenimento h1 a:hover {
+	text-decoration: underline;
+	color: #ed5353;
+}
+
+#entretenimento .info-entretenimento {
+	width: 210px;
+	margin: 10px 0;
+	float: left;
+}
+
+#entretenimento .info-entretenimento ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#entretenimento .info-entretenimento ul li {
+	width: 60px;
+	float: left;
+	color: #777;
+	background: #900;
+	padding: 4px 20px;
+}
+
+#entretenimento .info-entretenimento ul .autor-entretenimento {
+	background:url(images/autor.png) no-repeat center left;
+}
+
+#entretenimento .info-entretenimento ul .coment-entretenimento {
+	background:url(images/coment.png) no-repeat center left;
+}
+
+#entretenimento .post-entretenimento p {
+	font: 14px arial;
+	color: #777;
+}
+
+/*=== Bloco eSport-Colunas ===*/
+
+#bloco-esport-colunas {
+	width:100%;
+	float:left;
+	border-bottom:1px solid #efeeee;
+	padding:10px 0;
+}
+
+/*=== eSport ===*/
+
+#esport {
+	width:330px;
+	float:left;
+}
+
+#title-esport {
+	border-bottom:2px solid #efeeee;
+	padding:4px 0;
+}
+
+#title-esport span {
+	font:22px arial;
+	font-weight:bold;
+	color:#292929;
+	border-bottom:2px solid #ed5353;
+	padding:5px 0;
+}
+
+#esport img {
+	width:330px;
+	height:180px;
+	margin:20px 0 0 0;
+	float:left;
+}
+
+.esport-info {
+	width:100%;
+	float:left;
+	background:#ed5353;
+}
+
+.esport-info ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.esport-info ul li {
+	float:left;
+	width:60px;
+	color:#f8f8f8;
+	padding:4px 20px;
+}
+
+.esport-info ul .esport-autor {
+	background: url(images/autor-branco.png) no-repeat center left;
+}
+
+.esport-info ul .esport-views {
+	background: url(images/views-branco.png) no-repeat center left;
+}
+
+.esport-info ul .esport-coment {
+	background: url(images/coment-branco.png) no-repeat center left;
+}
+
+#esport h1 {
+	font:14px arial;
+	font-weight:bold;
+	float:left;
+	margin:10px 0;
+}
+
+#esport h1 a {
+	color:#444;
+	text-decoration:none;
+}
+
+#esport h1 a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+#esport #esport-list {
+	float:left;
+}
+
+#esport #esport-list ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+#esport #esport-list ul li {
+	width:100%;
+	float:left;
+	border-top:1px solid #efeeee;
+	padding:10px 0;
+}
+
+#esport #esport-list ul li img {
+	width:70px;
+	height:70px;
+	float:left;
+	margin:0 8px 0 0;
+}
+
+#esport #esport-list h2 {
+	font:14px arial;
+	padding:6px 0;
+}
+
+#esport #esport-list h2 a {
+	color:#444;
+	text-decoration:none;
+}
+
+#esport #esport-list h2 a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+/*=== Colunas ===*/
+
+#colunas {
+	width:330px;
+	float:right;
+}
+
+#title-colunas {
+	border-bottom:2px solid #efeeee;
+	padding:4px 0;
+}
+
+#title-colunas span {
+	font:22px arial;
+	font-weight:bold;
+	color:#292929;
+	border-bottom:2px solid #ed5353;
+	padding:5px 0;
+}
+
+#colunas img {
+	width:330px;
+	height:180px;
+	margin:20px 0 0 0;
+	float:left;
+}
+
+.colunas-info {
+	width:100%;
+	float:left;
+	background:#ed5353;
+}
+
+.colunas-info ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.colunas-info ul li {
+	float:left;
+	width:60px;
+	color:#f8f8f8;
+	padding:4px 20px;
+}
+
+.colunas-info ul .colunas-autor {
+	background: url(images/autor-branco.png) no-repeat center left;
+}
+
+.colunas-info ul .colunas-views {
+	background: url(images/views-branco.png) no-repeat center left;
+}
+
+.colunas-info ul .colunas-coment {
+	background: url(images/coment-branco.png) no-repeat center left;
+}
+
+#colunas h1 {
+	font:14px arial;
+	font-weight:bold;
+	float:left;
+	margin:10px 0;
+}
+
+#colunas h1 a {
+	color:#444;
+	text-decoration:none;
+}
+
+#colunas h1 a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+#colunas #colunas-list {
+	float:left;
+}
+
+#colunas #colunas-list ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+#colunas #colunas-list ul li {
+	width:100%;
+	float:left;
+	border-top:1px solid #efeeee;
+	padding:10px 0;
+}
+
+#colunas #colunas-list ul li img {
+	width:70px;
+	height:70px;
+	float:left;
+	margin:0 8px 0 0;
+}
+
+#colunas #colunas-list h2 {
+	font:14px arial;
+	padding:6px 0;
+}
+
+#colunas #colunas-list h2 a {
+	color:#444;
+	text-decoration:none;
+}
+
+#colunas #colunas-list h2 a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+/*=== Bloco Política-Games ===*/
+
+#bloco-politica-games {
+	width:100%;
+	float:left;
+	border-bottom:1px solid #efeeee;
+}
+
+/*=== Política ===*/
+
+#politica {
+	width:330px;
+	float:left;
+}
+
+#title-politica {
+	border-bottom:2px solid #efeeee;
+	padding:4px 0;
+}
+
+#title-politica span {
+	font:22px arial;
+	font-weight:bold;
+	color:#292929;
+	border-bottom:2px solid #ed5353;
+	padding:5px 0;
+}
+
+#politica img {
+	width:330px;
+	height:180px;
+	margin:20px 0 0 0;
+	float:left;
+}
+
+.politica-info {
+	width:100%;
+	float:left;
+	background:#ed5353;
+}
+
+.politica-info ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.politica-info ul li {
+	float:left;
+	width:60px;
+	color:#f8f8f8;
+	padding:4px 20px;
+}
+
+.politica-info ul .politica-autor {
+	background: url(images/autor-branco.png) no-repeat center left;
+}
+
+.politica-info ul .politica-views {
+	background: url(images/views-branco.png) no-repeat center left;
+}
+
+.politica-info ul .politica-coment {
+	background: url(images/coment-branco.png) no-repeat center left;
+}
+
+#politica h1 {
+	font:14px arial;
+	font-weight:bold;
+	float:left;
+	margin:10px 0;
+}
+
+#politica h1 a {
+	color:#444;
+	text-decoration:none;
+}
+
+#politica h1 a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+#politica #politica-list {
+	float:left;
+}
+
+#politica #politica-list ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+#politica #politica-list ul li {
+	width:100%;
+	float:left;
+	border-top:1px solid #efeeee;
+	padding:10px 0;
+}
+
+#politica #politica-list ul li img {
+	width:70px;
+	height:70px;
+	float:left;
+	margin:0 8px 0 0;
+}
+
+#politica #politica-list h2 {
+	font:14px arial;
+	padding:6px 0;
+}
+
+#politica #politica-list h2 a {
+	color:#444;
+	text-decoration:none;
+}
+
+#politica #politica-list h2 a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+/*=== Games ===*/
+
+#games {
+	width:330px;
+	float:right;
+}
+
+#title-games {
+	border-bottom:2px solid #efeeee;
+	padding:4px 0;
+}
+
+#title-games span {
+	font:22px arial;
+	font-weight:bold;
+	color:#292929;
+	border-bottom:2px solid #ed5353;
+	padding:5px 0;
+}
+
+#games img {
+	width:330px;
+	height:180px;
+	margin:20px 0 0 0;
+	float:left;
+}
+
+.games-info {
+	width:100%;
+	float:left;
+	background:#ed5353;
+}
+
+.games-info ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.games-info ul li {
+	float:left;
+	width:60px;
+	color:#f8f8f8;
+	padding:4px 20px;
+}
+
+.games-info ul .games-autor {
+	background: url(images/autor-branco.png) no-repeat center left;
+}
+
+.games-info ul .games-views {
+	background: url(images/views-branco.png) no-repeat center left;
+}
+
+.games-info ul .games-coment {
+	background: url(images/coment-branco.png) no-repeat center left;
+}
+
+#games h1 {
+	font:14px arial;
+	font-weight:bold;
+	float:left;
+	margin:10px 0;
+}
+
+#games h1 a {
+	color:#444;
+	text-decoration:none;
+}
+
+#games h1 a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+#games #games-list {
+	float:left;
+}
+
+#games #games-list ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+#games #games-list ul li {
+	width:100%;
+	float:left;
+	border-top:1px solid #efeeee;
+	padding:10px 0;
+}
+
+#games #games-list ul li img {
+	width:70px;
+	height:70px;
+	float:left;
+	margin:0 8px 0 0;
+}
+
+#games #games-list h2 {
+	font:14px arial;
+	padding:6px 0;
+}
+
+#games #games-list h2 a {
+	color:#444;
+	text-decoration:none;
+}
+
+#games #games-list h2 a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+/*=== Sidebar ===*/
+
+#sidebar {
+	width:280px;
+	float:right;
+	overflow:hidden;
+	margin-top:30px;
+}
+
+/*=== Sidebar Vistos ===*/
+
+#sidebar-vistos {
+	width:100%;
+	float:left;
+}
+
+#sidebar-vistos #title-vistos {
+	border-bottom:2px solid #efeeee;
+	padding:5px 0;
+}
+
+#sidebar-vistos #title-vistos span {
+	font:22px arial;
+	font-weight:bold;
+	color:#292929;
+	padding:5px 0;
+	border-bottom:2px solid #ed5353;
+}
+
+#sidebar-vistos #title-vistos ul li span {
+	font:18px arial;
+	color:#fff;
+	padding:10px;
+	float:left;
+}
+
+#sidebar-vistos ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#sidebar-vistos ul li {
+	width:100%;
+	float:left;
+	border-bottom:1px solid #efeeee;
+	padding:10px 0;
+}
+
+#sidebar-vistos ul li a {
+	color:#555;
+	text-decoration:none;
+}
+
+#sidebar-vistos ul li a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+#sidebar-vistos .vistos-number {
+	padding:10px;
+	font:18px arial;
+	color:#fff;
+	float:left;
+	background:#ed5353;
+	margin-right:10px;
+}
+
+/*=== Sidebar Colunistas ===*/
+
+#sidebar-colunistas {
+	width:100%;
+	float:left;
+	margin-top:30px;
+}
+
+#sidebar-colunistas #title-colunistas {
+	border-bottom:2px solid #efeeee;
+	padding:5px 0;
+}
+
+#sidebar-colunistas #title-colunistas span {
+	font:22px arial;
+	font-weight:bold;
+	color:#292929;
+	padding:5px 0;
+	border-bottom:2px solid #ed5353;
+}
+
+#sidebar-colunistas .colunistas {
+	width:100%;
+	float:left;
+}
+
+#sidebar-colunistas .colunistas ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#sidebar-colunistas .colunistas ul li {
+	float:left;
+	width:100%;
+	padding:18px 0;
+	border-bottom:1px solid #efeeee;
+}
+
+#sidebar-colunistas .colunistas ul li img {
+	float:left;
+}
+
+#sidebar-colunistas .colunistas ul li h1 {
+	font:16px arial;
+	font-weight:bold;
+	width:195px;
+	float:left;
+	margin-left:10px;
+	height:46px;
+}
+
+#sidebar-colunistas .colunistas ul li h1 a {
+	color:#292929;
+	text-decoration:none;
+}
+
+#sidebar-colunistas .colunistas ul li h1 a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+#sidebar-colunistas .colunistas .info-colunistas {
+	width:205px;
+	float:left;
+	background:#ed5353;
+}
+
+#sidebar-colunistas .colunistas .info-colunistas ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#sidebar-colunistas .colunistas .info-colunistas ul li {
+	float:left;
+	width:20px;
+	height:20px;
+	padding:0;
+	margin:2px 14px;
+	border-bottom:none;
+}
+
+/*=== Publicidade ===*/
+
+#sidebar-publi {
+	width:100%;
+	float:left;
+	margin-top:30px;
+}
+
+#sidebar-publi #title-publi {
+	border-bottom:2px solid #efeeee;
+	padding:5px 0;
+}
+
+#sidebar-publi #title-publi span {
+	font:22px arial;
+	font-weight:bold;
+	color:#292929;
+	padding:5px 0;
+	border-bottom:2px solid #ed5353;
+}
+
+#sidebar-publi ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#sidebar-publi .publi-maior {
+	width:280px;
+	height:230px;
+	float:left;
+	background:#eee;
+	margin:16px 0;
+
+}
+
+#sidebar-publi .publi-left {
+	width:125px;
+	height:125px;
+	float:left;
+	background:#eee;
+}
+
+#sidebar-publi .publi-right {
+	width:125px;
+	height:125px;
+	float:right;
+	background:#eee;
+}
+
+/*=== Sidebar Coment ===*/
+
+#sidebar-coment {
+	width:100%;
+	float:left;
+	margin-top:30px;
+}
+
+#sidebar-coment #title-coment {
+	border-bottom:2px solid #efeeee;
+	padding:5px 0;
+}
+
+#sidebar-coment #title-coment span {
+	font:22px arial;
+	font-weight:bold;
+	color:#292929;
+	padding:5px 0;
+	border-bottom:2px solid #ed5353;
+}
+
+#sidebar-coment #title-coment ul li span {
+	font:18px arial;
+	color:#fff;
+	padding:10px;
+	float:left;
+}
+
+#sidebar-coment ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#sidebar-coment ul li {
+	width:100%;
+	float:left;
+	border-bottom:1px solid #efeeee;
+	padding:10px 0;
+}
+
+#sidebar-coment ul li a {
+	color:#555;
+	text-decoration:none;
+}
+
+#sidebar-coment ul li a:hover {
+	color:#ed5353;
+	text-decoration:underline;
+}
+
+#sidebar-coment .coment-number {
+	padding:10px;
+	font:18px arial;
+	color:#fff;
+	float:left;
+	background:#ed5353;
+	margin-right:10px;
+}
+
+/*=== Sidebar Facebook ===*/
+
+#sidebar-facebook {
+	width:100%;
+	float:left;
+	margin-top:30px;
+}
+
+#sidebar-facebook #title-facebook {
+	border-bottom:2px solid #efeeee;
+	padding:5px 0;
+}
+
+#sidebar-facebook #title-facebook span {
+	font:22px arial;
+	font-weight:bold;
+	color:#292929;
+	padding:5px 0;
+	border-bottom:2px solid #ed5353;
+}
+
+#sidebar-facebook #face-box {
+	margin-top:20px;
+}
+
+/*=== Footer ===*/
+
+#footer {
+	width: 100%;
+	clear: both;
+	background: #222;
+	overflow: hidden;
+	margin-top: 40px;
+	text-align: left;
+}
+
+#footer-content {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#footer-content #title-footer {
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #333;
+}
+
+#footer-content #title-footer span {
+	float: left;
+	padding: 10px 0;
+}
+
+/*=== Footer Sobre ===*/
+
+#footer-sobre {
+	width: 330px;
+	float: left;
+	margin-top: 25px;
+	margin-right: 30px;
+}
+
+#footer-sobre #title-sobre {
+	width: 100%;
+	padding: 5px 0;
+	border-bottom: 2px solid #efeeee;
+	margin-bottom: 10px;
+}
+
+#footer-sobre #title-sobre span {
+	font: 22px arial;
+	font-weight: bold;
+	padding: 6px 0;
+	color: #f8f8f8;
+	border-bottom: 2px solid #ed5353;
+}
+
+#footer-sobre p {
+	font: 14px arial;
+	color: #bcbbbb;
+	line-height: 18px;
+	padding: 6px 0;
+}
+
+/*=== Footer Páginas ===*/
+
+#footer-paginas {
+	width: 290px;
+	float: left;
+	margin-top: 25px;
+}
+
+#footer-paginas #title-paginas {
+	width: 100%;
+	padding: 5px 0;
+	border-bottom: 2px solid #efeeee;
+}
+
+#footer-paginas #title-paginas span {
+	font: 22px arial;
+	font-weight: bold;
+	padding: 6px 0;
+	color: #f8f8f8;
+	border-bottom: 2px solid #ed5353;
+}
+
+#footer-paginas ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#footer-paginas ul li {
+	width: 100%;
+	border-bottom: 1px solid #333;
+	padding: 8px 0px;
+	font: 13px arial;
+	font-weight: bold;
+}
+
+#footer-paginas ul li a {
+	color: #f8f8f8;
+	text-decoration: none;
+}
+
+#footer-paginas ul li a:hover {
+	color: #ed5353;
+}
+
+/*=== Footer Recentes ===*/
+
+#footer-recentes {
+	width: 280px;
+	float: right;
+	margin-top: 25px;
+}
+
+#footer-recentes #title-recentes {
+	width: 100%;
+	padding: 5px 0;
+	border-bottom: 2px solid #efeeee;
+}
+
+#footer-recentes #title-recentes span {
+	font: 22px arial;
+	font-weight: bold;
+	padding: 6px 0;
+	color: #f8f8f8;
+	border-bottom: 2px solid #ed5353;
+}
+
+#footer-recentes ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#footer-recentes ul li {
+	width: 100%;
+	border-bottom: 1px solid #333;
+	padding: 8px 0px;
+	font: 13px arial;
+	font-weight: bold;
+}
+
+#footer-recentes ul li a {
+	color: #f8f8f8;
+	text-decoration: none;
+}
+
+#footer-recentes ul li a:hover {
+	color: #ed5353;
+}
+
+/*=== Footer Info ===*/
+
+#footer-info {
+	width: 100%;
+	clear: both;
+	border-top: 1px solid #333;
+	padding: 20px 0;
+	overflow: hidden;
+	float: left;
+	margin-top: 25px;
+}
+
+#info-content {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#info-content span {
+	float: left;
+	color: #565656;
+	font: 12px arial;
+	font-weight: bold;
+}
+
+#info-content span b {
+	color: #a4a6a7;
+}
+
+#info-content .info-right {
+	float: right;
+}
