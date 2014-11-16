@@ -180,7 +180,7 @@
 
 						</div> <!--/fim info-entretenimento -->
 
-						<p>Justin Timberlake será umas das grandes atrações do Rock in Rio 2013. De acordo com a organização do festival, o cantor </p>
+						<p><?php the_excerpt_rereloaded(20, ' Continue lendo...'); ?></p>
 
 					</div> <!--/ fim post-entretenimento -->
 
@@ -201,21 +201,30 @@
 
 						</div> <!-- fim title-esport -->
 
-						<a href="#"><img src="<?php bloginfo('template_url') ?>/images/post4.jpg" rel="" title="" /></a>
+						<?php query_posts('category_name=e-sports&offset=0&showposts=3'); ?>
+
+						<?php if (have_posts()) : ?>
+						<?php while (have_posts()) : the_post(); ?>
+
+						<a href="#"><img src="<?php the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
 								<div class="esport-info"/>
 
 									<ul>
 
-										<li class="esport-autor">autor</li>
-										<li class="esport-views">views</li>
-										<li class="esport-coment">coment</li>
+										<li class="esport-autor"><?php the_author(); ?></li>
+										<li class="esport-views"><?php if (function_exists('the_views')) { the_views(); } ?></li>
+										<li class="esport-coment"><?php comments_number('0', '1', '%'); ?></li>
 
 									</ul>
 
 								</div> <!--/ fim esport-info -->
 
-								<h1><a href="#">Starcraft II e League of Legends estarão nos Jogos Olímpicos de 2020</a></h1>
+								<h1><a href="<?php  the_Permalink(); ?>"><?php the_title(); ?></a></h1>
+
+						<?php endwhile; ?>
+						<?php else : ?>
+						<?php endif; ?>
 
 								<div id="esport-list">
 

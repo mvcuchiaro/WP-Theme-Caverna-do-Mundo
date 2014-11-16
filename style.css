@@ -496,6 +496,10 @@ body {
 	color: #777;
 }
 
+#entretenimento .post-entretenimento p a {
+	color: #ed5353;
+}
+
 /*=== Bloco eSport-Colunas ===*/
 
 #bloco-esport-colunas {
