@@ -823,6 +823,7 @@ body {
 
 #politica #politica-list {
 	float:left;
+    width: 100%;
 }
 
 #politica #politica-list ul {
@@ -937,6 +938,7 @@ body {
 
 #games #games-list {
 	float:left;
+    width: 100%;
 }
 
 #games #games-list ul {

@@ -326,34 +326,52 @@
 							<span>POLÍTICA</span>
 
 						</div> <!-- fim title-politica -->
+						
+						<?php query_posts('category_name=politica&offset=0&showposts=1'); ?>
 
-						<a href="#"><img src="<?php bloginfo('template_url') ?>/images/post4.jpg" rel="" title="" /></a>
+				    	<?php if (have_posts()) : ?>
+						<?php while (have_posts()) : the_post(); ?>
+
+						<a href="<?php the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
 								<div class="politica-info"/>
 
 									<ul>
 
-										<li class="politica-autor">autor</li>
-										<li class="politica-views">views</li>
-										<li class="politica-coment">coment</li>
+										<li class="politica-autor"><?php the_author(); ?></li>
+										<li class="politica-views"><?php if (function_exists('the_views')) { the_views(); } ?></li>
+										<li class="politica-coment"><?php comments_number('0', '1', '%'); ?></li>
 
 									</ul>
 
 								</div> <!--/ fim politica-info -->
 
-								<h1><a href="#">Starcraft II e League of Legends estarão nos Jogos Olímpicos de 2020</a></h1>
+								<h1><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h1>
+								
+								<?php endwhile; ?>
+								<?php else : ?>
+								<?php endif; ?>
 
 								<div id="politica-list">
 
 									<ul>
+                                        
+                                        <?php query_posts('category_name=politica&offset=1&showposts=1'); ?>
+
+				                    	<?php if (have_posts()) : ?>
+						                <?php while (have_posts()) : the_post(); ?>
 
 										<li>
 
-											<a href="#"><img src="<?php bloginfo('template_url') ?>/images/post2.jpg" rel="" title="" /></a>
+											<a href="<?php the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
-											<h2><a href="">Ultima edição do Mundial de League of Legends que occorreu na Korea foi o que motivou a descisão, diz Presidente do COI.</a></h2>
+											<h2><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h2>
 
 										</li>
+										
+										<?php endwhile; ?>
+								        <?php else : ?>
+								        <?php endif; ?>
 
 									</ul>
 
@@ -369,34 +387,52 @@
 							<span>GAMES</span>
 
 						</div> <!-- fim title-games -->
+						
+						<?php query_posts('category_name=games&offset=0&showposts=1'); ?>
 
-						<a href="#"><img src="<?php bloginfo('template_url') ?>/images/post4.jpg" rel="" title="" /></a>
+				        <?php if (have_posts()) : ?>
+				        <?php while (have_posts()) : the_post(); ?>
+
+						<a href="<?php the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
 								<div class="games-info"/>
 
 									<ul>
 
-										<li class="games-autor">autor</li>
-										<li class="games-views">views</li>
-										<li class="games-coment">coment</li>
+										<li class="games-autor"><?php the_author(); ?></li>
+										<li class="games-views"><?php if (function_exists('the_views')) { the_views(); } ?></li>
+										<li class="games-coment"><?php comments_number('0', '1', '%'); ?></li>
 
 									</ul>
 
 								</div> <!--/ fim games-info -->
 
-								<h1><a href="#">Starcraft II e League of Legends estarão nos Jogos Olímpicos de 2020</a></h1>
+								<h1><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h1>
+								
+								<?php endwhile; ?>
+				                <?php else : ?>
+								<?php endif; ?>
 
 								<div id="games-list">
 
 									<ul>
 
 										<li>
+                                            
+                                            <?php query_posts('category_name=games&offset=1&showposts=1'); ?>
 
-											<a href="#"><img src="<?php bloginfo('template_url') ?>/images/post2.jpg" rel="" title="" /></a>
+				                            <?php if (have_posts()) : ?>
+				                            <?php while (have_posts()) : the_post(); ?>
 
-											<h2><a href="">Ultima edição do Mundial de League of Legends que occorreu na Korea foi o que motivou a descisão, diz Presidente do COI.</a></h2>
+											<a href="<?php the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+
+											<h2><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h2>
 
 										</li>
+										
+										<?php endwhile; ?>
+				                        <?php else : ?>
+								        <?php endif; ?>
 
 									</ul>
 
