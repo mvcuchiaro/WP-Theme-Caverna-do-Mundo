@@ -5,12 +5,19 @@
 		<div id="title-footer"> <span><img src="<?php bloginfo('template_url'); ?>/images/logo-footer.png" alt="" title=""></span> </div> <!--/ fim title-footer -->
 		
 		<div id="footer-sobre">
+		
+		      <?php query_posts('page_id=8'); ?>  
+		
+		      <?php if (have_posts()) : ?> 
+		      <?php while (have_posts()) : the_post(); ?>
 			
-			<div id="title-sobre"> <span>SOBRE NÓS</span> </div>
+			<div id="title-sobre"> <span><?php the_title(); ?></span> </div>
 
-			<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor </p>
-
-			<p>desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. </p>
+			<p><?php the_excerpt(); ?> <a href="<?php the_Permalink(); ?>">Leia mais...</a> </p>
+			
+			<?php endwhile; ?>
+            <?php else : ?>
+			<?php endif; ?>
 
 		</div> <!--/ fim footer-sobre -->
 
@@ -20,11 +27,9 @@
 
 			<ul>
 
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Arquivos</a></li>
-				<li><a href="#">Sobre Nós</a></li>
-				<li><a href="#">Serviços</a></li>
-				<li><a href="#">Contato</a></li>
+				<li><a href="<?php bloginfo('home'); ?>">Home</a></li>
+               
+                <?php wp_list_pages('title_li='); ?>
 
 			</ul>
 
@@ -35,10 +40,17 @@
 			<div id="title-recentes"> <span>POSTS RECENTES</span> </div>
 
 			<ul>
+                
+                  <?php query_posts('showposts=5'); ?>  
+		
+		          <?php if (have_posts()) : ?> 
+		          <?php while (have_posts()) : the_post(); ?>
 
-				<li><a href="#">GTA 5: Rockstar revela detalhes sobre mecânicas e jogabilidade</a></li>
-				<li><a href="#">GTA 5: Rockstar revela detalhes sobre mecânicas e jogabilidade</a></li>
-				<li><a href="#">GTA 5: Rockstar revela detalhes sobre mecânicas e jogabilidade</a></li>
+				<li><a href="the_Permalink();"><?php the_title(); ?></a></li>
+				
+				<?php endwhile; ?>
+                <?php else : ?>
+			    <?php endif; ?>
 
 			</ul>	
 

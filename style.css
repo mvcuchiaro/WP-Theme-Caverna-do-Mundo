@@ -1306,6 +1306,7 @@ body {
 }
 
 #footer-sobre #title-sobre span {
+    text-transform: uppercase;
 	font: 22px arial;
 	font-weight: bold;
 	padding: 6px 0;
@@ -1318,6 +1319,10 @@ body {
 	color: #bcbbbb;
 	line-height: 18px;
 	padding: 6px 0;
+}
+
+#footer-sobre a {
+    color: #ed5353;
 }
 
 /*=== Footer Páginas ===*/
