@@ -5,45 +5,20 @@
 					<div id="title-vistos">
 
 						<span>POSTS MAIS VISTOS</span>
+						
+						<?php if(function_exists('get_most_viewed')): ?>
 
 						<ul>
 
 							<li>
 
-								<span class="vistos-number" >1</span>
-								<a href="#">Google deve liberar nova interface do Maps em evento</a>
-
-							</li>
-
-							<li>
-
-								<span class="vistos-number" >2</span>
-								<a href="#">iPhone 'baratinho' deve chegar a poucos países</a>
-
-							</li>
-
-							<li>
-
-								<span class="vistos-number" >3</span>
-								<a href="#">Aprenda como usar o Google Now no Android</a>
-
-							</li>
-
-							<li>
-
-								<span class="vistos-number" >4</span>
-								<a href="#">Adobe revela caneta e régua com recursos para tablets</a>
-
-							</li>
-
-							<li>
-
-								<span class="vistos-number" >5</span>
-								<a href="#">Samsung e Nokia são líderes em reclamações no Brasil</a>
+								<?php get_most_viewed('post', 5); ?>
 
 							</li>
 
 						</ul>
+
+						<?php endif; ?>
 
 					</div> <!---/ fim title-vistos -->
 
@@ -59,70 +34,12 @@
 
 							<ul>
 
-								<li>
-
-									<img src="<?php bloginfo('template_url'); ?>/images/colunista.jpg" alt="" title=""/>
-									<h1><a href="#">Marco V. Cuchiaro</a></h1>
-
-									<div class="info-colunistas">
-
-										<ul>
-
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/facebook.png" alt="" title=""/></a></li>
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/google+.png" alt="" title=""/></a></li>
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/twitter.png" alt="" title=""/></a></li>
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/youtube.png" alt="" title=""/></a></li>
-
-										</ul>
-
-									</div> <!---/ fim info-colunistas -->
-
-								</li>
+								<?php $author='ID-USER'; ?>
 
 								<li>
 
-									<img src="<?php bloginfo('template_url'); ?>/images/colunista2.jpg" alt="" title=""/>
-									<h1><a href="#">Giovanni Cuchiaro</a></h1>
-
-									<div class="info-colunistas">
-
-										<ul>
-
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/facebook.png" alt="" title=""/></a></li>
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/google+.png" alt="" title=""/></a></li>
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/twitter.png" alt="" title=""/></a></li>
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/youtube.png" alt="" title=""/></a></li>
-
-										</ul>
-
-									</div> <!---/ fim info-colunistas -->
-
-								</li>
-
-								<li>
-
-									<img src="<?php bloginfo('template_url'); ?>/images/colunista3.jpg" alt="" title=""/>
-									<h1><a href="#">Marco A. Cuchiaro</a></h1>
-
-									<div class="info-colunistas">
-
-										<ul>
-
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/facebook.png" alt="" title=""/></a></li>
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/google+.png" alt="" title=""/></a></li>
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/twitter.png" alt="" title=""/></a></li>
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/youtube.png" alt="" title=""/></a></li>
-
-										</ul>
-
-									</div> <!---/ fim info-colunistas -->
-
-								</li>
-
-								<li>
-
-									<img src="<?php bloginfo('template_url'); ?>/images/colunista3.jpg" alt="" title=""/>
-									<h1><a href="#">Lourdes Cuchiaro</a></h1>
+									<?php echo get_avatar($author, 70); ?>
+									<h1><a href="#"><?php $user_info = get_userdata($author); ?><?php echo $user_info->fist_name ."". $user_info->last_name ."\n" ?></a></h1>
 
 									<div class="info-colunistas">
 
