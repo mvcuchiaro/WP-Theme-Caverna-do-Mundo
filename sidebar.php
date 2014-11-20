@@ -24,45 +24,7 @@
 
 				</div> <!--/ fim sidebar-vistos -->
 
-				<div id="sidebar-colunistas">
-
-					<div id="title-colunistas">
-
-						<span>COLUNISTAS</span>
-
-						<div class="colunistas">
-
-							<ul>
-
-								<?php $author='ID-USER'; ?>
-
-								<li>
-
-									<?php echo get_avatar($author, 70); ?>
-									<h1><a href="#"><?php $user_info = get_userdata($author); ?><?php echo $user_info->fist_name ."". $user_info->last_name ."\n" ?></a></h1>
-
-									<div class="info-colunistas">
-
-										<ul>
-
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/facebook.png" alt="" title=""/></a></li>
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/google+.png" alt="" title=""/></a></li>
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/twitter.png" alt="" title=""/></a></li>
-											<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/youtube.png" alt="" title=""/></a></li>
-
-										</ul>
-
-									</div> <!---/ fim info-colunistas -->
-
-								</li>
-
-							</ul>
-
-						</div> <!--/ fim colunistas -->
-
-					</div> <!--/ fim title-colunistas -->
-
-				</div> <!--/ fim sidebar-colunistas -->
+				<?php include_once("sidebar-colunistas.php"); ?>
 
 				<div id="sidebar-publi">
 
@@ -84,48 +46,29 @@
 
 				<div id="sidebar-coment">
 
-					<div id="title-coment">
+					<div id="title-coment"> <span>MAIS COMENTADOS</span> </div>	
 
-						<span>MAIS COMENTADOS</span>
+					<ul>
 
-						<ul>
+						<?php $result = $wpdb->get_results("SELECT comment_count, ID, post_title FROM $wpdb->posts ORDER BY comment_count DESC LIMIT 0 , 5");
+                           foreach($result as $post) {
+                              setup_postdata($post);
+                              $postid = $post->ID;
+                              $title = $post->post_title;
+                              $commentcount = $post->comment_count;
+                              if($commentcount != 0) { ?>
+                                
+						<li>
 
-							<li>
+							<span class="coment-number" ><?php $i = $i; $i++; echo $i; ?></span>
+							<a href="<?php the_Permalink(); ?>"><?php echo $title; ?><!--/ fazer aparecer numero de coments/ - <?php echo $commentcount ?> --> </a>
 
-								<span class="coment-number" >1</span>
-								<a href="#">Google deve liberar nova interface do Maps em evento</a>
+						</li>
+							
+						<?php } ?>
+						<?php } ?>
 
-							</li>
-
-							<li>
-
-								<span class="coment-number" >2</span>
-								<a href="#">iPhone 'baratinho' deve chegar a poucos países</a>
-
-							</li>
-
-							<li>
-
-								<span class="coment-number" >3</span>
-								<a href="#">Aprenda como usar o Google Now no Android</a>
-
-							</li>
-
-							<li>
-
-								<span class="coment-number" >4</span>
-								<a href="#">Adobe revela caneta e régua com recursos para tablets</a>
-
-							</li>
-
-							<li>
-
-								<span class="coment-number" >5</span>
-								<a href="#">Samsung e Nokia são líderes em reclamações no Brasil</a>
-
-							</li>
-
-						</ul>
+					</ul>
 
 				</div> <!--/ fim sidebar-coment -->
 
