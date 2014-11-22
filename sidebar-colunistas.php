@@ -51,6 +51,28 @@
 									</div> <!---/ fim info-colunistas -->
 
 								</li>
+								
+								<?php $author='3'; ?>
+
+								<li>
+
+									<?php echo get_avatar($author, 70); ?>
+									<h1><a href="<?php bloginfo('url'); ?>/?author=<?php echo $author ?>"><?php $user_info = get_userdata($author); echo ($user_info->first_name ."" . $user_info->last_name ."\n"); ?></a></h1>
+
+									<div class="info-colunistas">
+
+										<ul>
+
+											<li><a href="https://www.facebook.com/cuchiaro" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/facebook.png" alt="" title=""/></a></li>
+											<li><a href="https://plus.google.com/u/0/105793324895745440320/posts" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/google+.png" alt="" title=""/></a></li>
+											<li><a href="https://twitter.com/cuchiaro1" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/twitter.png" alt="" title=""/></a></li>
+											<li><a href="https://www.youtube.com/user/cuchiaro1" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/youtube.png" alt="" title=""/></a></li>
+
+										</ul>
+
+									</div> <!---/ fim info-colunistas -->
+
+								</li>
 
 							</ul>
 

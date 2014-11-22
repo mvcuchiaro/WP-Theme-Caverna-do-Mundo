@@ -11,7 +11,7 @@
 		      <?php if (have_posts()) : ?> 
 		      <?php while (have_posts()) : the_post(); ?>
 			
-			<div id="title-sobre"> <span><?php the_title(); ?></span> </div>
+			<div id="title-sobre"> <span style="text-align: justify;"><?php the_title(); ?></span> </div>
 
 			<p><?php the_excerpt(); ?> <a href="<?php the_Permalink(); ?>">Leia mais...</a> </p>
 			
@@ -62,7 +62,7 @@
 
 		<div id="info-content">
 			
-			<span>©2014EquipeCDM All rights reserved.</span>
+			<span>©2014EquipeCDM Creative Commons.</span>
 
 			<span class="info-right">Developed by: <b>Marco V. Cuchiaro</b></span>
 

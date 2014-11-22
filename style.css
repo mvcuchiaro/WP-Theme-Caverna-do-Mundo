@@ -3,7 +3,7 @@
 Theme Name: Caverna do Mundo / Blog
 Description: Tema desenvolvido para o blog CDM
 Author: Marco V. Cuchiaro
-Version: 1.0.2
+Version: 1.1.0
 
 */
 
@@ -1262,6 +1262,112 @@ body {
 	margin-top:20px;
 }
 
+/*=== Páginas ==*/
+
+.main-page {
+    margin-top:30px;
+}
+
+.main-page #title-page {
+	border-bottom:2px solid #efeeee;
+	padding:5px 0;
+
+}
+
+.main-page #title-page span {
+    text-transform: uppercase;
+	font:22px arial;
+	font-weight:bold;
+	color:#292929;
+	border-bottom:2px solid #ed5353;
+	padding:5px 0;
+}
+
+.main-page p {
+    margin-top: 15px;
+    font:13px arial;
+    color:#666;
+}
+
+.main-page p a {
+    color:#ed5353;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.main-page p a:hover {
+    text-decoration: underline;
+}
+
+.main-page strong {
+    color:#444;
+}
+
+.main-page em {
+    color:#000;
+}
+
+.main-page ul li {
+    font:15px arial;
+    color: #555;
+    margin: 10px 50px;
+}
+
+.main-page ol li {
+    font:15px arial;
+    color: #555;
+    margin: 10px 50px;
+}
+
+.main-page h1 {
+    color: #ed5353;
+    font:24px arial;
+}
+
+.main-page h2 {
+    color: #ed5353;
+    font:22px arial;
+}
+
+.main-page h3 {
+    color: #ed5353;
+    font:20px arial;
+}
+
+.main-page h3 {
+    color: #ed5353;
+    font:18px arial;
+}
+
+.main-page h4 {
+    color: #ed5353;
+    font:16px arial;
+}
+
+.main-page h5 {
+    color: #ed5353;
+    font:14px arial;
+}
+
+.main-page h6 {
+    color: #ed5353;
+    font:12px arial;
+}
+
+.main-page h1,h2,h3,h4,h5,h6 {
+    margin-top:15px;
+}
+
+.main-page blockquote {
+    padding:10px;
+    border-left:2px solid #ed5353;
+    background:#eee;
+    margin-top:15px;
+    margin-left:30px;
+}
+
+
+
 /*=== Footer ===*/
 
 #footer {
@@ -1356,7 +1462,7 @@ body {
 #footer-paginas ul li {
 	width: 100%;
 	border-bottom: 1px solid #333;
-	padding: 8px 0px;
+	padding: 12px 0px;
 	font: 13px arial;
 	font-weight: bold;
 }
