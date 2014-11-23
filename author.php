@@ -4,18 +4,20 @@
 
 			<div id="content">
                 
-                <div class="main-page">
+                <div class="main-author">
                    
-                    <div id="title-page">
+                    <div id="title-author">
 
-						<span><?php the_title(); ?></span>
+						<span>Posts escritos por: <?php the_author(); ?></span>
 
 					</div> <!--/ fim title-page -->
                    
                     <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
                     
-                    <p><?php the_content(); ?></p>
+                    <h1><a href="<?php the_Permalink(); ?>" style="font:20px arial;font-weight:bold; border-bottom:2px solid #ed5353;"><?php the_title(); ?></a></h1>
+                    
+                    <p><?php the_excerpt_rereloaded(80, ' Continue lendo...'); ?></p>
                     
                     <?php endwhile; ?>
                     <?php else : ?>

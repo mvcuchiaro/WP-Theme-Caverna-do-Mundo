@@ -4,9 +4,9 @@
 
 			<div id="content">
                 
-                <div class="main-page">
+                <div class="main-single">
                    
-                    <div id="title-page">
+                    <div id="title-single">
 
 						<span><?php the_title(); ?></span>
 
@@ -14,6 +14,8 @@
                    
                     <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
+                    
+                    <h6>Por: <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a> | Em: <?php the_time('j M Y'); ?> | <?php comments_number('0', '1', '%'); ?> Comentário(s) | Categoria(s): <a href="#"><?php the_category(' - '); ?></a></h6>
                     
                     <p><?php the_content(); ?></p>
                     
