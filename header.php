@@ -60,22 +60,13 @@
 
 				</div> <!--/ fim logo -->
 
-				<div id="search">
-
-					<form action="" method="post" >
-
-						<input type="text" name="" placeholder="Digite sua busca:">
-						<input type="submit" value="" class="btn-search" name="">
-
-					</form> <!--/ fim form -->
-
-				</div> <!--/ fim search -->
+                <?php get_search_form(); ?>
 
 				<div id="login">
 
 					<ul>
-						<li class="logar"><a href="http://localhost/cdm/wp-admin">Login</a></li>
-						<li class ="registre"><a href="http://localhost/cdm/wp-login.php?action=register">Registre-se</a></li>
+						<li class="logar"><a href="http://wordpress.com/wp-login.php">Login</a></li>
+						<li class ="registre"><a href="http://signup.wordpress.com/signup">Registre-se</a></li>
 					</ul>
 
 				</div> <!--/ fim login -->
@@ -88,7 +79,7 @@
 
 					<ul>
 						
-						<?php wp_list_categories('title_li=&hide_empty=0&orderby&depth=2&exclude=43'); ?>
+						<?php wp_list_categories('title_li=&hide_empty=0&orderby&depth=2&exclude=41'); ?>
 
 					</ul>
 

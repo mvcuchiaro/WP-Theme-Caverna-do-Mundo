@@ -3,7 +3,7 @@
 Theme Name: Caverna do Mundo / Blog
 Description: Tema desenvolvido para o blog CDM
 Author: Marco V. Cuchiaro
-Version: 1.1.0
+Version: 1.2.0
 
 */
 
@@ -14,7 +14,7 @@ Version: 1.1.0
 
 body {
 	background:#fff;
-	font:14px arial, tahoma, verdana;
+	font:14px ubuntu, tahoma, verdana;
 	text-align:center;
 }
 
@@ -118,9 +118,12 @@ body {
 #search {
 	float:right;
 	margin-top:50px;
+    margin-left:10px;
+    border:1px solid #444;
 }
 
 #search input {
+    font-family:ubuntu;
 	float:left;
 	border:0;
 	padding:14px 8px;
@@ -158,7 +161,7 @@ body {
 #nav-content ul li {
 	float:left;
 	position:relative;
-	font:14px arial, verdana, tahoma;
+	font:14px ubuntu, verdana, tahoma;
 	font-weight:bold;
 	text-transform:uppercase;
 	border-right:1px solid #333;
@@ -191,7 +194,7 @@ body {
 #nav-content ul li ul li {
 	border-right:none;
 	width:220px;
-	font: 14px arial;
+	font: 14px ubuntu;
 }
 
 #nav-content ul li ul li a {
@@ -245,7 +248,7 @@ body {
 }
 
 #destaque .destaque-post h1 {
-	font:18px arial; font-weight:bold;
+	font:18px ubuntu; font-weight:bold;
 }
 
 #destaque .destaque-post h1 a{
@@ -311,7 +314,7 @@ body {
 
 
 #destaque .list-dest h2 {
-	font:14px arial;
+	font:14px ubuntu;
 }
 
 #destaque .list-dest h2 a {
@@ -339,7 +342,7 @@ body {
 }
 
 #tecnologia #title-tec span {
-	font:22px arial;
+	font:22px ubuntu;
 	font-weight:bold;
 	color:#292929;
 	border-bottom:2px solid #ed5353;
@@ -361,7 +364,7 @@ body {
 }
 
 #tecnologia .post-tec h1 {
-	font: 22px arial;
+	font: 22px ubuntu;
 }
 
 #tecnologia .post-tec h1 a {
@@ -429,7 +432,7 @@ body {
 }
 
 #entretenimento #title-entretenimento span {
-	font: 22px arial;
+	font: 22px ubuntu;
 	font-weight: bold;
 	padding: 5px 0;
 	border-bottom: 2px solid #ed5353;
@@ -448,7 +451,7 @@ body {
 }
 
 #entretenimento .post-entretenimento h1 {
-	font: 16px arial;
+	font: 16px ubuntu;
 	font-weight: bold;
 	margin: 5px 0;
 }
@@ -492,7 +495,7 @@ body {
 }
 
 #entretenimento .post-entretenimento p {
-	font: 14px arial;
+	font: 14px ubuntu;
 	color: #777;
 }
 
@@ -522,7 +525,7 @@ body {
 }
 
 #title-esport span {
-	font:22px arial;
+	font:22px ubuntu;
 	font-weight:bold;
 	color:#292929;
 	border-bottom:2px solid #ed5353;
@@ -568,7 +571,7 @@ body {
 }
 
 #esport h1 {
-	font:14px arial;
+	font:15px ubuntu;
 	font-weight:bold;
 	float:left;
 	margin:10px 0;
@@ -610,7 +613,7 @@ body {
 }
 
 #esport #esport-list h2 {
-	font:14px arial;
+	font:14px ubuntu;
 	padding:6px 0;
 }
 
@@ -637,7 +640,7 @@ body {
 }
 
 #title-colunas span {
-	font:22px arial;
+	font:22px ubuntu;
 	font-weight:bold;
 	color:#292929;
 	border-bottom:2px solid #ed5353;
@@ -684,7 +687,7 @@ body {
 }
 
 #colunas h1 {
-	font:14px arial;
+	font:15px ubuntu;
 	font-weight:bold;
 	float:left;
 	margin:10px 0;
@@ -725,7 +728,7 @@ body {
 }
 
 #colunas #colunas-list h2 {
-	font:14px arial;
+	font:14px ubuntu;
 	padding:6px 0;
 }
 
@@ -760,7 +763,7 @@ body {
 }
 
 #title-politica span {
-	font:22px arial;
+	font:22px ubuntu;
 	font-weight:bold;
 	color:#292929;
 	border-bottom:2px solid #ed5353;
@@ -807,7 +810,7 @@ body {
 }
 
 #politica h1 {
-	font:14px arial;
+	font:15px ubuntu;
 	font-weight:bold;
 	float:left;
 	margin:10px 0;
@@ -849,7 +852,7 @@ body {
 }
 
 #politica #politica-list h2 {
-	font:14px arial;
+	font:14px ubuntu;
 	padding:6px 0;
 }
 
@@ -876,7 +879,7 @@ body {
 }
 
 #title-games span {
-	font:22px arial;
+	font:22px ubuntu;
 	font-weight:bold;
 	color:#292929;
 	border-bottom:2px solid #ed5353;
@@ -922,7 +925,7 @@ body {
 }
 
 #games h1 {
-	font:14px arial;
+	font:15px ubuntu;
 	font-weight:bold;
 	float:left;
 	margin:10px 0;
@@ -964,7 +967,7 @@ body {
 }
 
 #games #games-list h2 {
-	font:14px arial;
+	font:14px ubuntu;
 	padding:6px 0;
 }
 
@@ -1000,7 +1003,7 @@ body {
 }
 
 #sidebar-vistos #title-vistos span {
-	font:22px arial;
+	font:22px ubuntu;
 	font-weight:bold;
 	color:#292929;
 	padding:5px 0;
@@ -1008,7 +1011,7 @@ body {
 }
 
 #sidebar-vistos #title-vistos ul li span {
-	font:18px arial;
+	font:18px ubuntu;
 	color:#fff;
 	padding:10px;
 	float:left;
@@ -1060,7 +1063,7 @@ body {
 }
 
 #sidebar-colunistas #title-colunistas span {
-	font:22px arial;
+	font:22px ubuntu;
 	font-weight:bold;
 	color:#292929;
 	padding:5px 0;
@@ -1090,7 +1093,7 @@ body {
 }
 
 #sidebar-colunistas .colunistas ul li h1 {
-	font:16px arial;
+	font:16px ubuntu;
 	font-weight:bold;
 	width:195px;
 	float:left;
@@ -1143,7 +1146,7 @@ body {
 }
 
 #sidebar-publi #title-publi span {
-	font:22px arial;
+	font:22px ubuntu;
 	font-weight:bold;
 	color:#292929;
 	padding:5px 0;
@@ -1193,7 +1196,7 @@ body {
 }
 
 #sidebar-coment #title-coment span {
-	font:22px arial;
+	font:22px ubuntu;
 	font-weight:bold;
 	color:#292929;
 	padding:5px 0;
@@ -1201,7 +1204,7 @@ body {
 }
 
 #sidebar-coment #title-coment ul li span {
-	font:18px arial;
+	font:18px ubuntu;
 	color:#fff;
 	padding:10px;
 	float:left;
@@ -1232,7 +1235,7 @@ body {
 
 #sidebar-coment .coment-number {
 	padding:10px;
-	font:18px arial;
+	font:18px ubuntu;
 	color:#fff;
 	float:left;
 	background:#ed5353;
@@ -1253,7 +1256,7 @@ body {
 }
 
 #sidebar-facebook #title-facebook span {
-	font:22px arial;
+	font:22px ubuntu;
 	font-weight:bold;
 	color:#292929;
 	padding:5px 0;
@@ -1310,50 +1313,50 @@ body {
 }
 
 .main-page ul li {
-    font:15px arial;
+    font:15px ubuntu;
     color: #555;
     margin: 10px 50px;
 }
 
 .main-page ol li {
-    font:15px arial;
+    font:15px ubuntu;
     color: #555;
     margin: 10px 50px;
 }
 
 .main-page h1 {
     color: #ed5353;
-    font:24px arial;
+    font:24px ubuntu;
 }
 
 .main-page h2 {
     color: #ed5353;
-    font:22px arial;
+    font:22px ubuntu;
 }
 
 .main-page h3 {
     color: #ed5353;
-    font:20px arial;
+    font:20px ubuntu;
 }
 
 .main-page h3 {
     color: #ed5353;
-    font:18px arial;
+    font:18px ubuntu;
 }
 
 .main-page h4 {
     color: #ed5353;
-    font:16px arial;
+    font:16px ubuntu;
 }
 
 .main-page h5 {
     color: #ed5353;
-    font:14px arial;
+    font:14px ubuntu;
 }
 
 .main-page h6 {
     color: #ed5353;
-    font:12px arial;
+    font:12px ubuntu;
 }
 
 .main-page h1,h2,h3,h4,h5,h6 {
@@ -1367,6 +1370,43 @@ body {
     margin-top:15px;
     margin-left:30px;
 }
+
+/*=== Formulário de Contato ===*/
+
+.main-page form input[type=text], [type=email] {
+    background:#eee;
+    border:1px solid #e1e1e1;
+    padding:6px;
+    width:400px;
+}
+
+.main-page form input[type=text]:focus {
+    border:2px solid #ed5353
+}
+
+.main-page form input[type=email]:focus {
+    border:2px solid #ed5353
+}
+
+.main-page form textarea {
+    background:#eee;
+    border:1px solid #e1e1e1;
+    padding:6px;
+    width:400px;
+}
+
+.main-page form textarea:focus {
+    border:2px solid #ed5353
+}
+
+.main-page form input[type=submit] {
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px;
+    border: 0;
+}
+
 
 /*=== Categorias ===*/
 
@@ -1382,7 +1422,7 @@ body {
 
 .main-cat #title-cat span {
     text-transform: uppercase;
-	font:25px arial;
+	font:25px ubuntu;
 	font-weight:bold;
 	color:#ed5353;
 	border-bottom:2px solid #ed5353;
@@ -1392,7 +1432,7 @@ body {
 .main-cat a{
     text-transform: uppercase;
     text-decoration: none;
-	font:10px arial;
+	font:10px ubuntu;
 	color:#292929;
 	padding:5px 0;
 }
@@ -1403,7 +1443,7 @@ body {
 
 .main-cat p {
     margin-top: 15px;
-    font:13px arial;
+    font:13px ubuntu;
     color:#666;
 }
 
@@ -1427,50 +1467,50 @@ body {
 }
 
 .main-cat ul li {
-    font:15px arial;
+    font:15px ubuntu;
     color: #555;
     margin: 10px 50px;
 }
 
 .main-cat ol li {
-    font:15px arial;
+    font:15px ubuntu;
     color: #555;
     margin: 10px 50px;
 }
 
 .main-cat h1 {
     color: #ed5353;
-    font:24px arial;
+    font:24px ubuntu;
 }
 
 .main-cat h2 {
     color: #ed5353;
-    font:22px arial;
+    font:22px ubuntu;
 }
 
 .main-cat h3 {
     color: #ed5353;
-    font:20px arial;
+    font:20px ubuntu;
 }
 
 .main-cat h3 {
     color: #ed5353;
-    font:18px arial;
+    font:18px ubuntu;
 }
 
 .main-cat h4 {
     color: #ed5353;
-    font:16px arial;
+    font:16px ubuntu;
 }
 
 .main-cat h5 {
     color: #ed5353;
-    font:14px arial;
+    font:14px ubuntu;
 }
 
 .main-cat h6 {
     color: #ed5353;
-    font:12px arial;
+    font:12px ubuntu;
 }
 
 .main-cat h1,h2,h3,h4,h5,h6 {
@@ -1499,7 +1539,7 @@ body {
 
 .main-tag #title-tag span {
     text-transform: uppercase;
-	font:25px arial;
+	font:25px ubuntu;
 	font-weight:bold;
 	color:#ed5353;
 	border-bottom:2px solid #ed5353;
@@ -1509,7 +1549,7 @@ body {
 .main-tag a{
     text-transform: uppercase;
     text-decoration: none;
-	font:10px arial;
+	font:10px ubuntu;
 	color:#292929;
 	padding:5px 0;
 }
@@ -1520,7 +1560,7 @@ body {
 
 .main-tag p {
     margin-top: 15px;
-    font:13px arial;
+    font:13px ubuntu;
     color:#666;
 }
 
@@ -1544,50 +1584,50 @@ body {
 }
 
 .main-tag ul li {
-    font:15px arial;
+    font:15px ubuntu;
     color: #555;
     margin: 10px 50px;
 }
 
 .main-tag ol li {
-    font:15px arial;
+    font:15px ubuntu;
     color: #555;
     margin: 10px 50px;
 }
 
 .main-tag h1 {
     color: #ed5353;
-    font:24px arial;
+    font:24px ubuntu;
 }
 
 .main-tag h2 {
     color: #ed5353;
-    font:22px arial;
+    font:22px ubuntu;
 }
 
 .main-tag h3 {
     color: #ed5353;
-    font:20px arial;
+    font:20px ubuntu;
 }
 
 .main-tag h3 {
     color: #ed5353;
-    font:18px arial;
+    font:18px ubuntu;
 }
 
 .main-tag h4 {
     color: #ed5353;
-    font:16px arial;
+    font:16px ubuntu;
 }
 
 .main-tag h5 {
     color: #ed5353;
-    font:14px arial;
+    font:14px ubuntu;
 }
 
 .main-tag h6 {
     color: #ed5353;
-    font:12px arial;
+    font:12px ubuntu;
 }
 
 .main-tag h1,h2,h3,h4,h5,h6 {
@@ -1616,7 +1656,7 @@ body {
 
 .main-single #title-single span {
     text-transform: uppercase;
-	font:22px arial;
+	font:22px ubuntu;
 	font-weight:bold;
 	color:#292929;
 	border-bottom:2px solid #ed5353;
@@ -1625,7 +1665,7 @@ body {
 
 .main-single p {
     margin-top: 15px;
-    font:13px arial;
+    font:15px ubuntu;
     color:#666;
 }
 
@@ -1648,50 +1688,50 @@ body {
 }
 
 .main-single ul li {
-    font:15px arial;
+    font:15px ubuntu;
     color: #555;
     margin: 10px 50px;
 }
 
 .main-single ol li {
-    font:15px arial;
+    font:15px ubuntu;
     color: #555;
     margin: 10px 50px;
 }
 
 .main-single h1 {
     color: #ed5353;
-    font:24px arial;
+    font:24px ubuntu;
 }
 
 .main-single h2 {
     color: #ed5353;
-    font:22px arial;
+    font:22px ubuntu;
 }
 
 .main-single h3 {
     color: #ed5353;
-    font:20px arial;
+    font:20px ubuntu;
 }
 
 .main-single h3 {
     color: #ed5353;
-    font:18px arial;
+    font:18px ubuntu;
 }
 
 .main-single h4 {
     color: #ed5353;
-    font:16px arial;
+    font:16px ubuntu;
 }
 
 .main-single h5 {
     color: #ed5353;
-    font:14px arial;
+    font:14px ubuntu;
 }
 
 .main-single h6 {
     color: #777;
-    font:12px arial;
+    font:12px ubuntu;
     font-weight: bold;
     margin-top:3px;
     padding: 10px 0px;
@@ -1734,7 +1774,7 @@ body {
 
 .main-author #title-author span {
     text-transform: uppercase;
-	font:25px arial;
+	font:25px ubuntu;
 	font-weight:bold;
 	color:#ed5353;
 	border-bottom:2px solid #ed5353;
@@ -1744,7 +1784,7 @@ body {
 .main-author a{
     text-transform: uppercase;
     text-decoration: none;
-	font:10px arial;
+	font:10px ubuntu;
 	color:#444;
 	padding:5px 0;
 }
@@ -1755,7 +1795,7 @@ body {
 
 .main-author p {
     margin-top: 15px;
-    font:13px arial;
+    font:13px ubuntu;
     color:#666;
 }
 
@@ -1779,50 +1819,50 @@ body {
 }
 
 .main-author ul li {
-    font:15px arial;
+    font:15px ubuntu;
     color: #555;
     margin: 10px 50px;
 }
 
 .main-author ol li {
-    font:15px arial;
+    font:15px ubuntu;
     color: #555;
     margin: 10px 50px;
 }
 
 .main-author h1 {
     color: #ed5353;
-    font:24px arial;
+    font:24px ubuntu;
 }
 
 .main-author h2 {
     color: #ed5353;
-    font:22px arial;
+    font:22px ubuntu;
 }
 
 .main-author h3 {
     color: #ed5353;
-    font:20px arial;
+    font:20px ubuntu;
 }
 
 .main-author h3 {
     color: #ed5353;
-    font:18px arial;
+    font:18px ubuntu;
 }
 
 .main-author h4 {
     color: #ed5353;
-    font:16px arial;
+    font:16px ubuntu;
 }
 
 .main-author h5 {
     color: #ed5353;
-    font:14px arial;
+    font:14px ubuntu;
 }
 
 .main-author h6 {
     color: #ed5353;
-    font:12px arial;
+    font:12px ubuntu;
 }
 
 .main-author h1,h2,h3,h4,h5,h6 {
@@ -1851,7 +1891,7 @@ body {
 
 .main-404 #title-404 span {
     text-transform: uppercase;
-	font:22px arial;
+	font:22px ubuntu;
 	font-weight:bold;
 	color:#292929;
 	border-bottom:2px solid #ed5353;
@@ -1860,7 +1900,7 @@ body {
 
 .main-404 p {
     margin-top: 15px;
-    font:13px arial;
+    font:13px ubuntu;
     color:#666;
 }
 
@@ -1883,23 +1923,125 @@ body {
 }
 
 .main-404 ul li {
-    font:15px arial;
+    font:15px ubuntu;
     color: #555;
     margin: 10px 50px;
 }
 
 .main-404 ol li {
-    font:15px arial;
+    font:15px ubuntu;
     color: #555;
     margin: 10px 50px;
 }
 
 .main-404 h1 {
     color: #ed5353;
-    font:22px arial;
+    font:22px ubuntu;
     margin-top: 15px;
 }
 
+/*=== Paginação ===*/
+
+.page-numbers {
+    float: left;
+    margin-top: 10px;  
+}
+
+.page-numbers li {
+    display: inline-block;
+    margin-left: 3px;    
+}
+
+.page-numbers a, .page-numbers .dots, .page-numbers .next, .page-numbers .prev {
+    padding: 3px 5px;
+    background: #eee;
+    text-decoration: none; 
+}
+
+.page-numbers a:hover, .page-numbers .next:hover, .page-numbers .prev:hover {
+    background: #666;
+}
+
+.page-numbers .current {
+    padding: 3px 5px;
+    background: #666;
+    color: #ed5353;   
+}
+
+/*=== Comentários ===*/
+
+#comments{
+    width:630px;
+    float:left;
+    border-top:3px solid #777;
+    }
+ 
+#comments h3{
+    font-size:14px;
+    margin:20px 0;
+    }
+ 
+ol.commentlist{
+    list-style:none;
+    }
+ 
+ol.commentlist li{
+    margin-bottom:30px;
+    }
+ 
+ol.commentlist ul{
+    margin:0px;
+    }
+ 
+ol.commentlist ul li{
+    margin:20px 20px 20px 40px;
+    }
+
+ol.commentlist a {
+    font:14px ubuntu;
+    font-weight: bold;
+    color: #ed5353;
+    text-decoration: none;
+}
+
+ol.commentlist a:hover {
+    text-decoration: underline;
+}
+ 
+#respond{
+    margin:0 0 30px 0;
+    clear:both;
+    }
+#respond h3 {
+    text-transform: uppercase;
+    font:16px ubuntu;
+}
+ 
+#respond form label{
+    float:left;
+    clear:left;
+    width:60px;
+    text-align:right;
+    margin-right:10px;
+    }
+ 
+#respond form input{
+    float:left;
+    width:250px;
+    margin-bottom:10px;
+    }
+ 
+#respond form textarea{
+    float:left;
+    width:400px;
+    height:100px;
+    margin-bottom:10px;
+    }
+ 
+#respond form input.commentsubmit{
+    float:left;
+    margin-left:70px;
+    }
 
 /*=== Footer ===*/
 
@@ -1946,7 +2088,7 @@ body {
 
 #footer-sobre #title-sobre span {
     text-transform: uppercase;
-	font: 22px arial;
+	font: 22px ubuntu;
 	font-weight: bold;
 	padding: 6px 0;
 	color: #f8f8f8;
@@ -1954,7 +2096,7 @@ body {
 }
 
 #footer-sobre p {
-	font: 14px arial;
+	font: 14px ubuntu;
 	color: #bcbbbb;
 	line-height: 18px;
 	padding: 6px 0;
@@ -1979,7 +2121,7 @@ body {
 }
 
 #footer-paginas #title-paginas span {
-	font: 22px arial;
+	font: 22px ubuntu;
 	font-weight: bold;
 	padding: 6px 0;
 	color: #f8f8f8;
@@ -1995,8 +2137,8 @@ body {
 #footer-paginas ul li {
 	width: 100%;
 	border-bottom: 1px solid #333;
-	padding: 12px 0px;
-	font: 13px arial;
+	padding: 19px 0px;
+	font: 13px ubuntu;
 	font-weight: bold;
 }
 
@@ -2024,7 +2166,7 @@ body {
 }
 
 #footer-recentes #title-recentes span {
-	font: 22px arial;
+	font: 22px ubuntu;
 	font-weight: bold;
 	padding: 6px 0;
 	color: #f8f8f8;
@@ -2041,7 +2183,7 @@ body {
 	width: 100%;
 	border-bottom: 1px solid #333;
 	padding: 8px 0px;
-	font: 13px arial;
+	font: 13px ubuntu;
 	font-weight: bold;
 }
 
@@ -2074,7 +2216,7 @@ body {
 #info-content span {
 	float: left;
 	color: #565656;
-	font: 12px arial;
+	font: 12px ubuntu;
 	font-weight: bold;
 }
 

@@ -19,6 +19,8 @@
                     
                     <p><?php the_content(); ?></p>
                     
+                    <?php comments_template(); ?>
+                    
                     <?php endwhile; ?>
                     <?php else : ?>
 				    <?php endif; ?>

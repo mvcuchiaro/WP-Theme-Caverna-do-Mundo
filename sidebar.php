@@ -12,7 +12,7 @@
 
 							<li>
 
-								<?php get_most_viewed('post', 5); ?>
+								<?php get_most_viewed('post', 10); ?>
 
 							</li>
 
@@ -26,23 +26,6 @@
 
 				<?php include_once("sidebar-colunistas.php"); ?>
 
-				<div id="sidebar-publi">
-
-					<div id="title-publi">
-
-						<span>PUBLICIDADE</span>
-
-						<ul>
-
-							<li class="publi-maior">Publicidade Maior</li>
-							<li class="publi-left">Publicidade Left</li>
-							<li class="publi-right">Publicidade Right</li>
-
-						</ul>
-
-					</div> <!--/ fim title-publi -->
-
-				</div> <!--/ fim sidebar-publi -->
 
 				<div id="sidebar-coment">
 
@@ -50,7 +33,7 @@
 
 					<ul>
 
-						<?php $result = $wpdb->get_results("SELECT comment_count, ID, post_title FROM $wpdb->posts ORDER BY comment_count DESC LIMIT 0 , 5");
+						<?php $result = $wpdb->get_results("SELECT comment_count, ID, post_title FROM $wpdb->posts ORDER BY comment_count DESC LIMIT 0 , 9");
                            foreach($result as $post) {
                               setup_postdata($post);
                               $postid = $post->ID;

@@ -15,13 +15,15 @@
                     <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
                     
-                    <h1><a href="<?php the_Permalink(); ?>" style="font:20px arial;font-weight:bold; border-bottom:2px solid #ed5353;"><?php the_title(); ?></a></h1>
+                    <h1><a href="<?php the_Permalink(); ?>" style="font:20px ubuntu;font-weight:bold; border-bottom:2px solid #ed5353;"><?php the_title(); ?></a></h1>
                     
                     <p><?php the_excerpt_rereloaded(80, ' Continue lendo...'); ?></p>
                     
                     <?php endwhile; ?>
                     <?php else : ?>
 				    <?php endif; ?>
+                   
+                    <?php if (function_exists('pagination_funtion')) pagination_funtion(); ?>
                     
                 </div>
         
